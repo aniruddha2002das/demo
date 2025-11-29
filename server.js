@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
     res.send(`Hello World from port ${port} and app ID is ${APP_ID}`);
 })
 
+app.get('/admin', (req, res) => {
+    res.send(`ADMIN: ----->> Hello World from port ${port} and app ID is ${APP_ID}`);
+})
+
 app.get('/:path', (req,res) => {
     res.send(`Hello World from port ${port} and path ${req.params.path} and app ID is ${APP_ID}`);
 })
